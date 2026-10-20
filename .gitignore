@@ -1,0 +1,50 @@
+# ---------- Python (backend) ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Node / Vite (frontend) ----------
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# ---------- Playwright ----------
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ---------- Local app state ----------
+# Contains the Spotify browser session (cookies!), temp media, downloaded tools,
+# failure screenshots and the episode history database. Never commit it.
+data/
+*.mp3
+*.m4a
+*.wav
+*.webm
+
+# ---------- Secrets / config ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Editors / OS ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
